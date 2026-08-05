@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <meta name="description" content="Personal portfolio website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="noise-overlay" aria-hidden="true"></div>
+
+      <header class="site-header">
+        <div class="container header-row">
+          <div class="header-left">
+            <a class="pill logo-pill" href="#top" aria-label="Home">
+              <span>mike.</span>
+            </a>
+
+            <a class="pill chat-pill hide-sm" href="#connect">Let's Chat <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg></a>
+
+            <button class="pill icon-button menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+              <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+            </button>
+          </div>
+
+          <nav class="header-links hide-md" aria-label="Social links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 6.5A1.94 1.94 0 1 1 3 6.5a1.94 1.94 0 0 1 3.94 0ZM3.5 9h3v12h-3zM10 9h2.87v1.64h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.62 2 3.62 4.59V21h-3v-6.34c0-1.51-.03-3.45-2.1-3.45s-2.42 1.64-2.42 3.34V21h-3Z"/></svg><span>LinkedIn</span></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.48c.5.09.68-.22.68-.48v-1.68c-2.77.61-3.35-1.18-3.35-1.18-.46-1.17-1.13-1.48-1.13-1.48-.93-.64.07-.63.07-.63 1.03.07 1.57 1.06 1.57 1.06.92 1.58 2.41 1.12 3 .85.09-.67.36-1.12.65-1.38-2.21-.25-4.54-1.1-4.54-4.91 0-1.08.39-1.96 1.03-2.65-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.8c.85 0 1.7.12 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.42.2 2.47.1 2.73.64.69 1.03 1.57 1.03 2.65 0 3.82-2.34 4.66-4.56 4.9.37.32.7.95.7 1.92v2.84c0 .26.18.57.69.47A10 10 0 0 0 12 2Z"/></svg><span>GitHub</span></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm5 2.75A5.25 5.25 0 1 1 6.75 12 5.25 5.25 0 0 1 12 6.75Zm0 2A3.25 3.25 0 1 0 15.25 12 3.25 3.25 0 0 0 12 8.75Zm5.63-3.23a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg><span>Instagram</span></a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social-link"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-8.29 8.3-1.42-1.42 8.3-8.29H14Z"/><path d="M5 5h6v2H7v10h10v-4h2v6H5Z"/></svg><span>CV</span></a>
+          </nav>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" hidden>
+          <a href="#projects">Projects</a>
+          <a href="#notes">Notes</a>
+          <a href="#skills">Skills</a>
+          <a href="#tools">Tools</a>
+          <a href="#connect">Connect</a>
+        </div>
+      </header>
+
+      <main id="top" class="site-main">
+        <section class="hero-section section-divider">
+          <div class="hero-glow"></div>
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Hi, I'm</p>
+              <h1 class="hero-title"><span>Mike</span><span>Korostelev</span></h1>
+              <div class="accent-dot"></div>
+              <a class="primary-button" href="#connect">Schedule a Call</a>
+            </div>
+
+            <div class="hero-bio reveal delay-1">
+              <p>Software Engineer, Cloud Architect, Technical Founder. I build scalable systems and <a href="#projects">beautiful products</a> that solve real problems.</p>
+              <p>Currently focused on React, TypeScript, and cloud infrastructure. Passionate about developer experience, performance optimization, and open source.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-alt content-auto" id="projects">
+          <div class="container two-column">
+            <div class="column column-left section-divider-vertical">
+              <h2>Projects</h2>
+              <p class="section-subtitle">A few things I've been building.</p>
+
+              <div class="card-list">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-card">
+                  <div>
+                    <h3>cyclic.sh Serverless PaaS</h3>
+                    <p>Serverless web application platform with automatic scaling and zero configuration.</p>
+                  </div>
+                  <svg class="icon arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-card">
+                  <div>
+                    <h3>Rabbit Crowd Library</h3>
+                    <p>Public library system for state policies and government documents.</p>
+                  </div>
+                  <svg class="icon arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-card">
+                  <div>
+                    <h3>SellerDigital Platform</h3>
+                    <p>E-commerce analytics dashboard for multi-channel sellers.</p>
+                  </div>
+                  <svg class="icon arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-card">
+                  <div>
+                    <h3>DevTools CLI</h3>
+                    <p>Command-line interface for rapid development workflow automation.</p>
+                  </div>
+                  <svg class="icon arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="column column-right" id="notes">
+              <h2>Notes</h2>
+              <p class="section-subtitle">Hope you upvoted these on Hackernews.</p>
+
+              <div class="notes-list">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="note-item">
+                  <svg class="icon bookmark-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-3-6 3Z"/></svg>
+                  <div>
+                    <h3>The Future of Serverless Computing</h3>
+                    <p>November 17, 2023</p>
+                  </div>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer" class="note-item">
+                  <svg class="icon bookmark-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-3-6 3Z"/></svg>
+                  <div>
+                    <h3>Building Resilient Distributed Systems</h3>
+                    <p>October 28, 2023</p>
+                  </div>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer" class="note-item">
+                  <svg class="icon bookmark-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-3-6 3Z"/></svg>
+                  <div>
+                    <h3>TypeScript Best Practices for Large Codebases</h3>
+                    <p>September 15, 2023</p>
+                  </div>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer" class="note-item last-note">
+                  <svg class="icon bookmark-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-3-6 3Z"/></svg>
+                  <div>
+                    <h3>Optimizing React Performance at Scale</h3>
+                    <p>August 3, 2023</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section content-auto" id="skills">
+          <div class="container">
+            <h2>Skills</h2>
+            <p class="section-subtitle">Technologies I work with.</p>
+
+            <div class="skills-grid">
+              <div>
+                <h3>Languages</h3>
+                <div class="tag-wrap">
+                  <span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">Go</span><span class="tag">Rust</span>
+                </div>
+              </div>
+              <div>
+                <h3>Frameworks</h3>
+                <div class="tag-wrap">
+                  <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">FastAPI</span>
+                </div>
+              </div>
+              <div>
+                <h3>Databases</h3>
+                <div class="tag-wrap">
+                  <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">MySQL</span><span class="tag">SQLite</span>
+                </div>
+              </div>
+              <div>
+                <h3>Cloud & Infrastructure</h3>
+                <div class="tag-wrap">
+                  <span class="tag">AWS</span><span class="tag">GCP</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-alt content-auto section-divider" id="tools">
+          <div class="container">
+            <h2>Tools</h2>
+            <p class="section-subtitle">Software and tools I use daily.</p>
+
+            <div class="tag-wrap tag-wrap-wide">
+              <span class="tag">Git</span><span class="tag">VS Code</span><span class="tag">Figma</span><span class="tag">Postman</span><span class="tag">Linux</span><span class="tag">Jest</span><span class="tag">Webpack</span><span class="tag">ESLint</span><span class="tag">Prettier</span><span class="tag">GitHub</span><span class="tag">Slack</span><span class="tag">Notion</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-divider" id="connect">
+          <div class="container connect-wrap">
+            <h2>Connect with me</h2>
+            <p class="section-subtitle">Let's build something amazing together.</p>
+
+            <div class="connect-row">
+              <div class="connect-icons">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="round-icon-link" aria-label="LinkedIn"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 6.5A1.94 1.94 0 1 1 3 6.5a1.94 1.94 0 0 1 3.94 0ZM3.5 9h3v12h-3zM10 9h2.87v1.64h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.62 2 3.62 4.59V21h-3v-6.34c0-1.51-.03-3.45-2.1-3.45s-2.42 1.64-2.42 3.34V21h-3Z"/></svg></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="round-icon-link" aria-label="GitHub"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.48c.5.09.68-.22.68-.48v-1.68c-2.77.61-3.35-1.18-3.35-1.18-.46-1.17-1.13-1.48-1.13-1.48-.93-.64.07-.63.07-.63 1.03.07 1.57 1.06 1.57 1.06.92 1.58 2.41 1.12 3 .85.09-.67.36-1.12.65-1.38-2.21-.25-4.54-1.1-4.54-4.91 0-1.08.39-1.96 1.03-2.65-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.8c.85 0 1.7.12 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.42.2 2.47.1 2.73.64.69 1.03 1.57 1.03 2.65 0 3.82-2.34 4.66-4.56 4.9.37.32.7.95.7 1.92v2.84c0 .26.18.57.69.47A10 10 0 0 0 12 2Z"/></svg></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="round-icon-link" aria-label="Instagram"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm5 2.75A5.25 5.25 0 1 1 6.75 12 5.25 5.25 0 0 1 12 6.75Zm0 2A3.25 3.25 0 1 0 15.25 12 3.25 3.25 0 0 0 12 8.75Zm5.63-3.23a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a>
+              </div>
+              <a class="email-link" href="mailto:mike.korostelev.dev@gmail.com">mike.korostelev.dev@gmail.com</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-visitors">
+          <span class="visitor-label">Site visitors</span>
+          <span id="visit-count" class="visitor-count">—</span>
+        </div>
+        <div class="container footer-row">
+          <div class="footer-copy">© <span id="year"></span> Mike Korostelev. All rights reserved.</div>
+          <div class="footer-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 6.5A1.94 1.94 0 1 1 3 6.5a1.94 1.94 0 0 1 3.94 0ZM3.5 9h3v12h-3zM10 9h2.87v1.64h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.62 2 3.62 4.59V21h-3v-6.34c0-1.51-.03-3.45-2.1-3.45s-2.42 1.64-2.42 3.34V21h-3Z"/></svg></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.48c.5.09.68-.22.68-.48v-1.68c-2.77.61-3.35-1.18-3.35-1.18-.46-1.17-1.13-1.48-1.13-1.48-.93-.64.07-.63.07-.63 1.03.07 1.57 1.06 1.57 1.06.92 1.58 2.41 1.12 3 .85.09-.67.36-1.12.65-1.38-2.21-.25-4.54-1.1-4.54-4.91 0-1.08.39-1.96 1.03-2.65-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.8c.85 0 1.7.12 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.42.2 2.47.1 2.73.64.69 1.03 1.57 1.03 2.65 0 3.82-2.34 4.66-4.56 4.9.37.32.7.95.7 1.92v2.84c0 .26.18.57.69.47A10 10 0 0 0 12 2Z"/></svg></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm5 2.75A5.25 5.25 0 1 1 6.75 12 5.25 5.25 0 0 1 12 6.75Zm0 2A3.25 3.25 0 1 0 15.25 12 3.25 3.25 0 0 0 12 8.75Zm5.63-3.23a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a>
+            <a class="email-link footer-email" href="mailto:mike.korostelev.dev@gmail.com">mike.korostelev.dev@gmail.com</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
