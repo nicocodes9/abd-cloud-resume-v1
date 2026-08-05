@@ -38,7 +38,7 @@ if (menuButton && mobileMenu) {
    SETUP: replace COUNTER_API_URL below with your deployed Worker URL.
    See backend/README.md for how to build and deploy that Worker.
    ========================================================================= */
-const COUNTER_API_URL = 'https://PLACEHOLDER.workers.dev/visits'
+const COUNTER_API_URL = 'https://cloud-resume-counter.nicoband9.workers.dev/visits'
 
 const COUNT_ANIMATION_MS = 1200
 
