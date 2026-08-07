@@ -11,7 +11,7 @@
 // During local development, "*" is fine. Once your Pages site is live,
 // change this to your real Pages URL (see README "Locking down CORS").
 // Making the change in this file as a comment to trigger the CI?CD workflow to redeploy the worker with the new CORS header.
-const ALLOWED_ORIGIN = 'https://abd-cloud-resume-v1.pages.dev/'
+const ALLOWED_ORIGIN = 'https://abd-cloud-resume-v1.pages.dev'
 // updating the CORS header to allow only the deployed Page site to access the worker.
 
 const KV_KEY = 'visit_count'
