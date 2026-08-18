@@ -27,8 +27,8 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 20% 20%, rgba(139, 147, 245, 0.1), transparent 22%),
-    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.05), transparent 20%),
+    radial-gradient(circle at 20% 20%, rgba(6, 6, 9, 0.1), transparent 22%),
+    radial-gradient(circle at 80% 30%, rgba(53, 53, 53, 0.05), transparent 20%),
     linear-gradient(180deg, #060606 0%, var(--background) 48%, #050505 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
