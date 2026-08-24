@@ -56,7 +56,7 @@ Instead of building it on AWS (the "default" path most candidates take), I delib
 
 **Request flow:** the browser loads the static site from Pages → `script.js` fires a `POST` to the Worker's `/visits` endpoint → the Worker reads the current count from KV, increments it, writes it back, and returns `{ "count": N }` → the frontend animates the new number into the footer.
 
-## **Delivery pipeline** (new): every change now passes through a quality gate before it can reach production.
+**Delivery pipeline** (new): every change now passes through a quality gate before it can reach production.
 
 ## 📁 Repository Structure
 
@@ -98,25 +98,25 @@ Increments the visit counter by 1 and returns the new total.
 
 **Request**
 
-```
+```bash
 curl -X POST https://cloud-resume-counter.nicoband9.workers.dev/visits
 ```
 
 **Response — `200 OK`**
 
-```
+```json
 { "count": 42 }
 ```
 
 **Response — `500 Internal Server Error`** (KV unavailable)
 
-```
+```json
 { "error": "Counter unavailable" }
 ```
 
 **Response — `405 Method Not Allowed`** (any method other than `POST`/`OPTIONS`)
 
-```
+```json
 { "error": "Method not allowed" }
 ```
 
@@ -136,7 +136,7 @@ CORS is locked down to a single allowed origin — the deployed Pages URL — so
 
 ### 1. Clone the repo
 
-```
+```bash
 git clone https://github.com/nicocodes9/abd-cloud-resume-v1.git
 cd abd-cloud-resume-v1
 ```
@@ -145,7 +145,7 @@ cd abd-cloud-resume-v1
 
 Full step-by-step instructions — creating the KV namespace, wiring up `wrangler.toml`, running the Worker locally, deploying, and locking down CORS — live in **[`backend/README.md`](https://github.com/nicocodes9/abd-cloud-resume-v1/blob/main/backend/README.md)**. In short:
 
-```
+```bash
 cd backend
 npm install
 wrangler login
@@ -155,14 +155,14 @@ wrangler dev                                    # local dev server
 
 ### 3. Run tests and lint before deploying
 
-```
+```bash
 npm test          # runs the Vitest suite against the real Workers runtime
 npm run lint       # runs ESLint
 ```
 
 Both of these run automatically on every pull request via `ci.yml` — running them locally first avoids a red CI check.
 
-```
+```bash
 wrangler deploy    # ship it
 ```
 
@@ -170,7 +170,7 @@ wrangler deploy    # ship it
 
 In `frontend/script.js`, update:
 
-```
+```javascript
 const COUNTER_API_URL =
   "https://your-worker-name.your-subdomain.workers.dev/visits";
 ```
@@ -179,7 +179,7 @@ const COUNTER_API_URL =
 
 Any static file server works for local preview:
 
-```
+```bash
 cd frontend
 npx serve .
 ```
