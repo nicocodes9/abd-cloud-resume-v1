@@ -72,15 +72,18 @@ Instead of building it on AWS (the "default" path most candidates take), I delib
 
 - Vanilla HTML5 / CSS3 / JavaScript (no framework — kept intentionally lightweight)
 - Deployed to **Cloudflare Pages**, served from the edge with no separate CDN needed
-  **Backend**
+
+**Backend**
 
 - **Cloudflare Workers** — serverless JavaScript runtime at the edge
 - **Workers KV** — eventually-consistent key-value store for the visit counter
-  **Testing & Code Quality**
+
+**Testing & Code Quality**
 
 - **Vitest** + **`@cloudflare/vitest-pool-workers`** — runs the Worker's test suite against a real `workerd` runtime, not a mock
 - **ESLint** — catches unused/undefined variables before merge
-  **DevOps / Tooling**
+
+**DevOps / Tooling**
 
 - **Wrangler CLI v4** — Cloudflare's infrastructure-as-code and deployment tool
 - **GitHub Actions** — two workflows: `ci.yml` (lint/test/dry-run on PRs) and `deploy-backend.yml` (real deploy on push to `main`)
