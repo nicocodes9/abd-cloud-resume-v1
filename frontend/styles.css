@@ -659,11 +659,16 @@ a {
 
   .project-card:hover,
   .note-item:hover,
-  .tag:hover,
   .round-icon-link:hover,
   .email-link:hover {
     transform: none;
     box-shadow: none;
+  }
+
+  .tag:hover,
+  .tag:active {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: var(--shadow);
   }
 
   .tag {
